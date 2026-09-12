@@ -63,4 +63,26 @@
   .page-title {
     @apply font-space font-bold text-[34px] tracking-wide mb-2;
   }
+
+  .animate-shoot {
+    opacity: 0;
+    animation: shoot 4.5s ease-in infinite;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, -20px) rotate(28deg);
+  }
+  8% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+    transform: translate(220px, 110px) rotate(28deg);
+  }
+  100% {
+    opacity: 0;
+  }
 }

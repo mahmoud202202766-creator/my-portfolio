@@ -2,7 +2,7 @@ import { NAV_ITEMS } from "../../data/navigation";
 import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
-    <nav className="flex flex-row md:flex-col gap-1 md:gap-2.5 w-full md:w-47.5 shrink-0 px-4 py-3 md:px-0 md:py-9 md:pl-7 overflow-x-auto md:overflow-visible bg-black/30 md:bg-transparent backdrop-blur md:backdrop-blur-0">
+    <nav className="flex flex-row md:flex-col gap-1 md:gap-2.5 w-full md:w-47.5 shrink-0 px-4 py-3 md:px-0 md:py-9 md:pl-7 overflow-x-auto md:overflow-visible bg-black/30 md:bg-transparent">
       <div className="hidden md:block font-space text-[15px] font-bold tracking-wide text-cyan-300 mb-8">
         MAHMOUD EL-SAYED
       </div>
