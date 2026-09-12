@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+/* ---- Design tokens (replaces tailwind.config.js in v4) ---- */
+@theme {
+  /* backgrounds */
+  --color-space-deep: #150a28; /* page background */
+  --color-space-panel: #1f1240; /* card / skill-card background */
+  --color-space-panel-2: #271650; /* gradient end for skill card */
+
+  --color-panel-light: #f4f1fb; /* project card background (light, on dark bg) */
+  --color-panel-light-2: #e9e4f7; /* "coming soon" card variant */
+
+  /* accents */
+  --color-accent-pink: #ff4fa3; /* primary accent — active states, CTAs, icons */
+  --color-accent-cyan: #4fd6ff; /* secondary accent — labels, tickers, links */
+  --color-accent-purple: #8b5cf6; /* tertiary accent — glows, gradients */
+
+  /* text */
+  --color-ink-primary: #f2eefc; /* main text on dark background */
+  --color-ink-muted: #a89bc9; /* secondary text on dark background */
+  --color-ink-dark: #241640; /* main text on light cards */
+  --color-ink-dark-muted: #5a4d80; /* secondary text on light cards */
+
+  --color-subtle: rgba(255, 255, 255, 0.1); /* border color */
+
+  /* type */
+  --font-space: "Space Grotesk", sans-serif; /* headings, nav, labels */
+  --font-sans: "Inter", sans-serif; /* body text (default) */
+
+  /* effects */
+  --shadow-glow: 0 0 24px rgba(255, 79, 163, 0.45);
+  --shadow-glow-purple: 0 -40px 120px rgba(139, 92, 246, 0.35);
+
+  --radius-card: 14px;
+  --radius-pill: 20px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-space-deep text-ink-primary font-sans;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-space-panel);
+    border-radius: 999px;
+  }
+}
+
+@layer utilities {
+  .ticker {
+    @apply font-space text-[11px] tracking-[2px] text-accent-cyan opacity-80;
+  }
+
+  .page-title {
+    @apply font-space font-bold text-[34px] tracking-wide mb-2;
+  }
+}
