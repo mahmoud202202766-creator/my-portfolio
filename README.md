@@ -6,7 +6,7 @@ The portfolio focuses on clean UI, responsive design, reusable React components,
 
 ## 🚀 Live Demo
 
-**Portfolio:** [Coming Soon]
+**Portfolio:** [https://mahmoud202202766-creator.github.io/my-portfolio/]
 
 **GitHub:** https://github.com/mahmoud202202766-creator
 
