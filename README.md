@@ -6,7 +6,7 @@ The portfolio focuses on clean UI, responsive design, reusable React components,
 
 ## 🚀 Live Demo
 
-**Portfolio:** [https://mahmoud202202766-creator.github.io/my-portfolio/]
+**Portfolio:** [https://my-portfolio-beta-ecru-27.vercel.app/about]
 
 **GitHub:** https://github.com/mahmoud202202766-creator
 
